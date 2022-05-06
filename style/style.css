@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.space {
+    margin: 10px;
+}
+
+#plate {
+    margin: 20px;
+}
+
+#input {
+    float: left;
+    padding: 10px 0px;
+}
+
+#output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    float: right;
+    margin: 20px 10px 20px 0px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+select, input, button {
+    margin: 0px;
+    padding: 0px;
+    width: 10em;
+    height: 2.5em;
+}

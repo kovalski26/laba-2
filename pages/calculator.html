@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Калькулятор</title>
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+        <script src="../script/script.js"></script>
+    </head>
+    <body>
+        <div id="plate" class="center">
+            <div id="input">
+                <div class="space">
+                    <select name="depositType" id="depositType">
+                        <option value="" selected disabled>Вид вклада</option>
+                        <option value="refillable">Пополняемый</option>
+                        <option value="term">Срочный</option>
+                    </select>
+                </div>
+                <div id="typeAnswer" class="space">
+                    <div id="refillable">
+                        <select name="refillableConditions">
+                            <option value="" selected disabled>Срок вклада</option>
+                            <option value="6">6 месяцев - 20%</option>
+                            <option value="12">1 год - 22%</option>
+                            <option value="18">1,5 года - 15%</option>
+                            <option value="24">2 года - 10%</option>
+                        </select>
+                    </div>
+                    <div id="term">
+                        <select name="termConditions">
+                            <option value="" selected disabled>Срок вклада</option>
+                            <option value="3">3 месяцев - 20%</option>
+                            <option value="6">6 месяцев - 22%</option>
+                            <option value="9">9 месяцев - 23%</option>
+                            <option value="12">1 год - 24%</option>
+                            <option value="18">1,5 года - 18%</option>
+                            <option value="24">2 года - 15%</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="space">
+                    <input name="depositAmount" placeholder="Сумма, руб."/>
+                </div>
+                <div class="space">
+                    <button id="button" value="submit">Рассчитать</button>
+                </div>
+            </div>
+            <div id="output">
+                <p id="outputConditions">Выберите условия вклада</p>
+                <p id="result"></p>
+            </div>
+        </div>
+        <a href="../index.html">Назад</a>
+    </body>
+</html>

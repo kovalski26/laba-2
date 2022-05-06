@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Слайдер</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <style type="text/css">
+            body {
+                background-color: lightblue;
+                margin: 50px;
+            }
+
+ .image {
+                width: 500px;
+                height: 400px;
+                object-fit: cover;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="lazy">
+            <img data-lazy="../image/pig1.jpg" src="../image/pig1.jpg" class="image"/>
+            <img data-lazy="../image/pig2.jpg" src="../image/pig2.jpg" class="image"/>
+            <img data-lazy="../image/pig3.jpg" src="../image/pig3.jpg" class="image"/>
+            <img data-lazy="../image/pig4.jpg" src="../image/pig4.jpg" class="image"/>
+            <img data-lazy="../image/pig5.jpg" src="../image/pig5.jpg" class="image"/>
+            <img data-lazy="../image/pig6.jpg" src="../image/pig6.jpg" class="image"/>
+        </div>
+        <a href="../index.html">Назад</a>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.lazy').slick({
+                    lazyLoad: 'ondemand',
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                });
+            });
+        </script>
+    </body>
+</html> 
